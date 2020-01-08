@@ -1,0 +1,111 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #1D2D44;
+  background-color: #EAF2EF;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*nav*/
+nav{
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+li {
+  padding: 10px;
+}
+
+.App-header{
+  width: 80%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid gray;
+  &-title{
+    font-size: 80px;
+    color: #D7263D;
+    font-weight: bold;
+    padding: 15% 10%;
+  }
+  h1 {
+    font-size: 70px;
+    font-weight: bold;
+    margin-right: 50px;
+  }
+  p{
+    letter-spacing: 3px;
+    line-height: 35px;
+    width: 40%;
+    font-size: 20px;
+    color: #3D5A80;
+    span {
+      color: #1D2D44;
+      font-weight: bold;
+      font-size: 22px;
+    }
+  }
+}
+
+.ProjectsContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
