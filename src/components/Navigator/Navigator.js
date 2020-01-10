@@ -7,7 +7,11 @@ class Navigator extends React.Component {
     super();
     this.state = {
       headerOffset: 0,
-      projectsOffest: 0,
+      projectsOffset: 0,
+      contactOffset: 0,
+      headerNavFeedback: '#D7263D',
+      projectsNavFeedback: 'white',
+      contactNavFeedback: 'white',
     }
     this.handleScroll = this.handleScroll.bind(this);
     this.scrollTo = this.scrollTo.bind(this);
@@ -15,25 +19,55 @@ class Navigator extends React.Component {
   }
 
   handleScroll(e) {
-    //console.log(window.scrollY)
+    const hightLight = '#D7263D';
+    const unHighlight = 'white';
+    const plusOffset = 100;
+    console.log('****')
+    console.log(window.scrollY)
+
+    console.log(this.state.contactOffset - 100)
+    if (window.scrollY < this.state.projectsOffset - plusOffset){
+      this.setState({
+        headerNavFeedback: hightLight,
+        projectsNavFeedback: unHighlight,
+        contactNavFeedback: unHighlight,
+      })
+    } else if(window.scrollY >= this.state.projectsOffset - plusOffset && window.scrollY < this.state.contactOffset - plusOffset){
+      this.setState({
+        headerNavFeedback: unHighlight,
+        projectsNavFeedback: hightLight,
+        contactNavFeedback: unHighlight,
+      })
+    } else if (window.scrollY >= this.state.contactOffset - plusOffset) {
+      console.log("here")
+      this.setState({
+        headerNavFeedback: unHighlight,
+        projectsNavFeedback: unHighlight,
+        contactNavFeedback: hightLight,
+      })
+    }
   }
 
   componentDidMount() {
     window.addEventListener('scroll', (e)=> this.handleScroll(e));
     const headerOffset = document.getElementById('Header').offsetTop;
-    const projectsOffest = document.getElementById('ProjectsContainer').offsetTop;
+    const projectsOffset = document.getElementById('ProjectsContainer').offsetTop;
+    const contactOffset = document.getElementById('Contact').offsetTop;
     this.setState({
       headerOffset,
-      projectsOffest
+      projectsOffset,
+      contactOffset,
     })
   }
  
   scrollTo(viewElement) {
     switch(viewElement) {
-      case 'Projects':
-        return window.scrollTo(0, this.state.projectsOffest);
       case 'Header':
-        return window.scrollTo(0, this.state.headerOffset);;
+        return window.scrollTo({left: 0, top: this.state.headerOffset, behavior: 'smooth'});
+      case 'Projects':
+        return window.scrollTo({left: 0, top: this.state.projectsOffset -80, behavior: 'smooth'});
+      case 'Contact':
+        return window.scrollTo({left: 0, top: this.state.contactOffset - 80, behavior: 'smooth'});
       default:
         return 0;
     }
@@ -41,23 +75,50 @@ class Navigator extends React.Component {
   
 
   render() {
+
+
+
     return (
       <nav className="NavigatorContainer" >
         <div className="navItemContainer" onClick={() => this.scrollTo('Header')}>
-          <div className="navItem"></div>
+          <div className="navItem" 
+            style={
+              {
+                backgroundColor: this.state.headerNavFeedback
+              }
+            }
+          />
           <div>
             Hello!
           </div>
         </div>
         <div className="itemLace"></div>
         <div className="navItemContainer" onClick={() => this.scrollTo('Projects')}>
-          <div className="navItem"></div>
+          <div className="navItem" 
+            style={
+              {
+                backgroundColor: this.state.projectsNavFeedback
+              }
+            }
+          />
           <div>
             Projects
           </div>
         </div>
         <div className="itemLace"></div>
-        <div className="navItem"></div>
+        <div className="navItemContainer" onClick={() => this.scrollTo('Contact')}>
+          <div className="navItem" 
+            style={
+              {
+                backgroundColor: this.state.contactNavFeedback
+              }
+            }
+          />
+          <div>
+            Contact
+          </div>
+        </div>
+        
       </nav>
     )
   }

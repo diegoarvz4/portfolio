@@ -76,7 +76,6 @@ function App() {
           desc={"A mobile app video game. Turbo Bluck is a mission space modern arcade experience. This project was built with Unity 5."}
         />
       </div>
-      <h1 className="App-header-title">Contact</h1>
       <Contact />
     </div>
   );

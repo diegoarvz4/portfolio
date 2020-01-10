@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default () => (
-  <div>
+  <div id="Contact">
     darvz.gtz@gmail.com
   </div>
 )

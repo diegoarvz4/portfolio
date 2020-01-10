@@ -16,9 +16,10 @@
     width: 20px;
     height: 20px;
     background-color: white;
-    border: 1px solid gray;
+    border: 1px solid rgb(226, 226, 226);
     border-radius: 20px;
     margin-right: 10px;
+    transition: all 0.5s;
     &:hover{
       cursor: pointer;
     }
@@ -26,7 +27,7 @@
   .itemLace{
     height: 200px;
     width: 1px;
-    border-left: 1px solid gray;
+    border-left: 1px solid rgb(211, 211, 211);
     position: relative;
     left: 8px;
   }
