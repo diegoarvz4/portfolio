@@ -31,8 +31,8 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   font-family: 'Noto Sans KR', sans-serif;
-  color: #1D2D44;
-  background-color: #EAF2EF;
+  color: #182848;
+  // background-color: #EAF2EF;
 }
 ol, ul {
 	list-style: none;
@@ -55,31 +55,21 @@ table {
 }
 
 /*nav*/
-nav{
-  width: 100%;
-  padding: 20px;
-  position: fixed;
-  top: 0;
-}
 
-ul {
-  display: flex;
-  justify-content: flex-end;
-}
-
-li {
-  padding: 10px;
-}
 
 .App-header{
-  width: 80%;
+  width: 100%;
   min-height: 100vh;
-  margin: 0 auto;
+  padding: 0 10%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  border-bottom: 1px solid gray;
+  // background: #4b6cb7;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to bottom, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to bottom, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  // border-bottom: 1px solid gray;
   &-title{
     font-size: 80px;
     color: #D7263D;
@@ -104,6 +94,8 @@ li {
     }
   }
 }
+
+
 
 .ProjectsContainer{
   display: flex;
