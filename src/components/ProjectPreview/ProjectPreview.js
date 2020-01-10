@@ -18,7 +18,7 @@ export default (props) => {
           {
             props.skillsIcons !== undefined && props.skillsIcons !== null
             ? props.skillsIcons.map(icon => (
-              <span><img src={require(`../../assets/icons/${icon}.svg`)} /></span>
+              <span key={icon}><img src={require(`../../assets/icons/${icon}.svg`)} /></span>
             ))
             : null
           }

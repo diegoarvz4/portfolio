@@ -12,14 +12,15 @@ import TurboBluckMockup from './assets/img/IphoneMockup_TurboBluck01.png';
 
 
 function App() {
+
   return (
     <div className="App">
       <Navigator />
-      <header className="App-header">
+      <header id="Header" className="App-header">
         <h1>{"< Diego Arvizu />"}</h1>
         <p>From <span>ideas</span> to <span>code</span> to <span>experiences</span>. That's what I do. I am a <span>web developer</span> and I invite you to see some of my work.</p>
       </header>
-      <div className="ProjectsContainer">
+      <div id="ProjectsContainer" className="ProjectsContainer">
         <ProjectPreview  
           img={musiclassMockup} 
           imgStyle={{
