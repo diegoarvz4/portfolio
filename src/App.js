@@ -14,11 +14,13 @@ import TurboBluckMockup from './assets/img/IphoneMockup_TurboBluck01.png';
 function App() {
 
   return (
-    <div className="App">
+    <div id="App" className="App">
       <Navigator />
       <header id="Header" className="App-header">
-        <h1>{"< Diego Arvizu />"}</h1>
-        <p>From <span>ideas</span> to <span>code</span> to <span>experiences</span>. That's what I do. I am a <span>web developer</span> and I invite you to see some of my work.</p>
+        <div className="App-header-msg">
+          <h1>{"Diego Arvizu"}</h1>
+          <p>From <span>ideas</span> to <span>code</span> to <span>experiences</span>. That's what I do. I am a <span>web developer</span> and I invite you to see some of my work.</p>
+        </div>
       </header>
       <div id="ProjectsContainer" className="ProjectsContainer">
         <ProjectPreview  
@@ -77,6 +79,9 @@ function App() {
         />
       </div>
       <Contact />
+      <footer>
+        © Diego Arvizu | 2020
+      </footer>
     </div>
   );
 }

@@ -19,31 +19,30 @@ class Navigator extends React.Component {
   }
 
   handleScroll(e) {
-    const hightLight = '#D7263D';
+    const hightLight = '#272838';
     const unHighlight = 'white';
     const plusOffset = 100;
-    console.log('****')
-    console.log(window.scrollY)
-
-    console.log(this.state.contactOffset)
     if (window.scrollY < this.state.projectsOffset - plusOffset){
       this.setState({
         headerNavFeedback: hightLight,
         projectsNavFeedback: unHighlight,
         contactNavFeedback: unHighlight,
       })
+      document.getElementById('App').style.backgroundColor = '#FFF';
     } else if(window.scrollY >= this.state.projectsOffset - plusOffset && window.scrollY < this.state.contactOffset - plusOffset){
       this.setState({
         headerNavFeedback: unHighlight,
         projectsNavFeedback: hightLight,
         contactNavFeedback: unHighlight,
       })
-    } else if (window.scrollY >= this.state.contactOffset + 500) {
+      document.getElementById('App').style.backgroundColor = '#FAFF81';
+    } else if (window.scrollY >= this.state.contactOffset - plusOffset) {
       this.setState({
         headerNavFeedback: unHighlight,
         projectsNavFeedback: unHighlight,
         contactNavFeedback: hightLight,
-      })
+      }) 
+      document.getElementById('App').style.backgroundColor = '#FFF';
     }
   }
 
@@ -87,7 +86,7 @@ class Navigator extends React.Component {
               }
             }
           />
-          <div>
+          <div className="navItem-text">
             Hello!
           </div>
         </div>
@@ -100,7 +99,7 @@ class Navigator extends React.Component {
               }
             }
           />
-          <div>
+          <div className="navItem-text">
             Projects
           </div>
         </div>
@@ -113,7 +112,7 @@ class Navigator extends React.Component {
               }
             }
           />
-          <div>
+          <div className="navItem-text">
             Contact
           </div>
         </div>

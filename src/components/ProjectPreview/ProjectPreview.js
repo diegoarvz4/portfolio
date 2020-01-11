@@ -8,7 +8,7 @@ import youtubeIcon from '../../assets/icons/youtube.svg';
 export default (props) => {
 
   return (
-    <div className={`ProjectPreviewContainer`}>
+    <div className="ProjectPreviewContainer">
       <h2 className="ProjectPreviewContainer-title">> {props.name}</h2>
       <div className="ProjectPreviewContainer-content ">
         <p className="ProjectPreviewContainer-content-desc">
