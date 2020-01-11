@@ -25,7 +25,7 @@ class Navigator extends React.Component {
     console.log('****')
     console.log(window.scrollY)
 
-    console.log(this.state.contactOffset - 100)
+    console.log(this.state.contactOffset)
     if (window.scrollY < this.state.projectsOffset - plusOffset){
       this.setState({
         headerNavFeedback: hightLight,
@@ -38,8 +38,7 @@ class Navigator extends React.Component {
         projectsNavFeedback: hightLight,
         contactNavFeedback: unHighlight,
       })
-    } else if (window.scrollY >= this.state.contactOffset - plusOffset) {
-      console.log("here")
+    } else if (window.scrollY >= this.state.contactOffset + 500) {
       this.setState({
         headerNavFeedback: unHighlight,
         projectsNavFeedback: unHighlight,
@@ -67,7 +66,7 @@ class Navigator extends React.Component {
       case 'Projects':
         return window.scrollTo({left: 0, top: this.state.projectsOffset -80, behavior: 'smooth'});
       case 'Contact':
-        return window.scrollTo({left: 0, top: this.state.contactOffset - 80, behavior: 'smooth'});
+        return window.scrollTo({left: 0, top: this.state.contactOffset + 580, behavior: 'smooth'});
       default:
         return 0;
     }

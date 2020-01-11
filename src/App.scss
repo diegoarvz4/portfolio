@@ -54,7 +54,10 @@ table {
   box-sizing: border-box;
 }
 
-/*nav*/
+.App{
+  width: 90%;
+  margin: 0 auto;
+}
 
 
 .App-header{
@@ -62,22 +65,11 @@ table {
   min-height: 100vh;
   padding: 0 10%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
-  // background: #4b6cb7;  /* fallback for old browsers */
-  // background: -webkit-linear-gradient(to bottom, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
-  // background: linear-gradient(to bottom, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  // border-bottom: 1px solid gray;
-  &-title{
-    font-size: 80px;
-    color: #D7263D;
-    font-weight: bold;
-    padding: 15% 10%;
-  }
+  justify-content: center;
+  align-items: center;
   h1 {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: bold;
     margin-right: 50px;
   }
