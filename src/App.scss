@@ -70,9 +70,6 @@ table {
   width: 100%;
   height: 100vh;
   max-height: 800px;
-  @media (max-width: 868px){
-    max-height: 600px;
-  }
   padding: 0 10%;
   display: flex;
   flex-wrap: wrap;
@@ -84,6 +81,9 @@ table {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    @media (max-width: 500px){
+      justify-content: flex-end;
+    }
   }
 
   h1 {
@@ -103,16 +103,18 @@ table {
       font-size: 22px;
     }
   }
-  @media (max-width: 868px){
+  @media (max-width: 500px){
+    padding-right: 0;
+    justify-content: flex-end;
     h1 {
       width: 100%;
-      text-align: center;
+      text-align: right;
       margin-bottom: 50px;
       margin-right: 0;
     }
     p{
       width: 80%;
-      text-align: center;
+      text-align: right;
     }
   }
   @media (max-width: 530px){

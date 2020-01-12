@@ -9,7 +9,7 @@ export default (props) => {
 
   return (
     <div className="ProjectPreviewContainer">
-      <h2 className="ProjectPreviewContainer-title">> {props.name}</h2>
+      <h2 className="ProjectPreviewContainer-title">>{props.name}</h2>
       <div className="ProjectPreviewContainer-content ">
         <p className="ProjectPreviewContainer-content-desc">
           {props.desc}
