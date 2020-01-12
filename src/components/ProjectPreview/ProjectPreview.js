@@ -25,13 +25,13 @@ export default (props) => {
         </div>
         <div className="ProjectPreviewContainer-content-links">
           <span>
-            <a href="https://google.com" target="_blank"  rel="noopener noreferrer">
+            <a href={props.sourceCodeLink} target="_blank"  rel="noopener noreferrer">
               <img src={githubIcon} />
               Source Code
             </a>
           </span>
           <span>
-            <a href="https://google.com" target="_blank"  rel="noopener noreferrer">
+            <a href={props.liveDemoLink} target="_blank"  rel="noopener noreferrer">
               <img src={liveDemoIcon} />Live Demo
             </a>
           </span>

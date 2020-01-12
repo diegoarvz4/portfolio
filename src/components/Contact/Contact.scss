@@ -21,6 +21,10 @@
       font-size: 15px;
       align-items: center;
       margin-right: 50px;
+      transition: all 0.2s;
+      &:hover{
+        transform: translateY(-10%);
+      }
       
       @media (max-width: 530px){
         margin-right: 10px;

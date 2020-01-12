@@ -30,16 +30,20 @@ function App() {
           }}
           skillsIcons={['html5','css3', 'sass','js', 'ruby', 'react']}
           name="MUSICLASS"
-          desc={"Musiclass is mobile web app for making appointments with music teachers. Find teachers by your favorite musical instrument. This project built with React JS for the frond-end, and the backend with Ruby on Rails."}          
+          desc={"Musiclass is mobile web app for making appointments with music teachers. Find teachers by your favorite musical instrument. This project was built with React JS (frond-end), and Ruby on Rails (back-end)."}          
+          sourceCodeLink={"https://github.com/diegoarvz4/React-MusicTeachers"}
+          liveDemoLink={"https://diegoarvz-musicteachers.herokuapp.com/"}
         />
         <ProjectPreview 
           skillsIcons={['html5','css3', 'sass', 'bootstrap','js', 'ruby']}
           name="LEXI SERIES"
           img={lexiSeriesMockup}
-          desc={"Lexi Series is a web platform for dubbing houses. Directors, translators and QC's need to have all the information as prompty as possible. The front-end and back-end were built with Ruby on Rails. Some componentes are from Bootstrap 3."}
+          desc={"Lexi Series is a web platform for dubbing houses. Directors, translators and QC's that need to have all the information as promptly as possible. The front-end and back-end were built with Ruby on Rails. Bootstrap 3 components were used."}
           imgStyle={{
             width: '100%'
           }}
+          sourceCodeLink={"https://github.com/diegoarvz4/lexi-series"}
+          liveDemoLink={"https://shrouded-mountain-06720.herokuapp.com/"}
         />
         <ProjectPreview 
           skillsIcons={['html5','css3', 'js', 'webpack']}
@@ -48,7 +52,9 @@ function App() {
             width: '100%'
           }}
           img={BattleshipMockup}
-          desc={"The classic boardgame Battleship to a simple web version against the CPU. This project was built with pure vanilla javascript with some ES6 and webpack."}
+          desc={"The classic boardgame Battleship into a practical web version. This project was built with pure vanilla javascript, ES6 and webpack."}
+          sourceCodeLink={"https://github.com/FSolM/JS-battleship"}
+          liveDemoLink={"https://fsolm.github.io/JS-battleship/"}
         />
         <ProjectPreview 
           skillsIcons={['html5', 'css3', 'sass', 'bootstrap','js', 'webpack']}
@@ -57,16 +63,20 @@ function App() {
           imgStyle={{
             width: '100%'
           }}
-          desc={"A social media where you can make post, like and comment your friend's posts. The backend and the frontend were built with Ruby on Rails."}
+          desc={"A social media where you can post, like and comment your friend's posts. The back-end and the front-end were built with Ruby on Rails."} 
+          sourceCodeLink={"https://github.com/diegoarvz4/building_facebook"}
+          liveDemoLink={"https://intense-refuge-98385.herokuapp.com"}
         />
         <ProjectPreview 
           skillsIcons={['html5','css3','js', 'webpack']}
-          name="WEATHER WEB APP"
+          name="WEATHER WEB"
           img={WeatherAPI}
           imgStyle={{
             width: '60%'
           }}
-          desc={"This simple web app gives you weather information about almost any city in the world. The data is fetched from OpenWeatherMap.com. This project was vuilt with vanilla javascript."}
+          desc={"This web app gives the weather information about almost any city in the world. The data is fetched from OpenWeatherMap.com. This project was built with vanilla javascript."}
+          sourceCodeLink={"https://github.com/diegoarvz4/weather_app"}
+          liveDemoLink={"https://diegoarvz4.github.io/weather_app/"}
         />
         <ProjectPreview 
           skillsIcons={['csharp', 'unity']}
@@ -76,6 +86,8 @@ function App() {
             width: '50%'
           }}
           desc={"A mobile app video game. Turbo Bluck is a mission space modern arcade experience. This project was built with Unity 5."}
+          sourceCodeLink={"https://play.google.com/store/apps/details?id=com.offbox.turbobluck&hl=en_US"}
+          liveDemoLink={"https://play.google.com/store/apps/details?id=com.offbox.turbobluck&hl=en_US"}
         />
       </div>
       <Contact />

@@ -8,11 +8,11 @@ export default () => (
   <div className="Contact" id="Contact">
     <h2 className="Contact-email">darvz.gtz@gmail.com</h2>
     <div className="Contact-icons">
-      <a href="https://google.com" target="_blank"  rel="noopener noreferrer">
+      <a href="https://twitter.com/diegoarvz4" target="_blank"  rel="noopener noreferrer">
         <img src={twitterIcon} />
         @diegoarvz4
       </a>
-      <a href="https://google.com" target="_blank"  rel="noopener noreferrer">
+      <a href="https://github.com/diegoarvz4" target="_blank"  rel="noopener noreferrer">
         <img src={githubIcon} />
         diegoarvz4
       </a>
