@@ -36,7 +36,7 @@ export default (props) => {
             </a>
           </span>
           <span>
-            <a href="https://google.com" target="_blank"  rel="noopener noreferrer">
+            <a href={props.walkthrough} target="_blank"  rel="noopener noreferrer">
               <img src={youtubeIcon}/> Walkthrough
             </a>
           </span>
