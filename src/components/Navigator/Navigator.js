@@ -65,7 +65,7 @@ class Navigator extends React.Component {
       case 'Projects':
         return window.scrollTo({left: 0, top: this.state.projectsOffset -80, behavior: 'smooth'});
       case 'Contact':
-        return window.scrollTo({left: 0, top: this.state.contactOffset + 580, behavior: 'smooth'});
+        return window.scrollTo({left: 0, top: 20000, behavior: 'smooth'});
       default:
         return 0;
     }

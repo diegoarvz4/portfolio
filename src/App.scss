@@ -85,14 +85,16 @@ table {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-name: showIn;
   &-msg{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: right;
     align-items: center;
-    @media (max-width: 500px){
+    @media (max-width: 700px){
+     
       justify-content: flex-end;
     }
   }
@@ -101,20 +103,32 @@ table {
     font-size: 60px;
     font-weight: bold;
     margin-right: 50px;
+    @media (max-width: 865px){
+      width: 100%;
+      justify-content: center;
+    }
   }
   p{
     letter-spacing: 3px;
     line-height: 35px;
     width: 40%;
-    font-size: 20px;
+    @media (max-width: 865px){
+      width: 70%;
+      justify-content: center;
+    }
+    font-size: 16px;
     color: #3D5A80;
+    margin-top: 65px;
     span {
       color: #1D2D44;
       font-weight: bold;
       font-size: 22px;
     }
   }
-  @media (max-width: 500px){
+
+
+
+  @media (max-width: 700px){
     padding-right: 0;
     justify-content: flex-end;
     h1 {
@@ -126,9 +140,10 @@ table {
     p{
       width: 80%;
       text-align: right;
+      margin-top: 0;
     }
   }
-  @media (max-width: 530px){
+  @media (max-width: 700px){
     h1{
       font-size: 40px;
     }
