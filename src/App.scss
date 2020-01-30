@@ -85,7 +85,7 @@ table {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  animation-duration: 3s;
+  animation-duration: 1.5s;
   animation-name: showIn;
   &-msg{
     display: flex;
@@ -94,7 +94,6 @@ table {
     text-align: right;
     align-items: center;
     @media (max-width: 700px){
-     
       justify-content: flex-end;
     }
   }
@@ -120,9 +119,18 @@ table {
     color: #3D5A80;
     margin-top: 65px;
     span {
+      opacity: 0;
       color: #1D2D44;
       font-weight: bold;
       font-size: 22px;
+      -webkit-animation-name: keyWordsIn; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+      -webkit-animation-delay: 1s;
+      -webkit-animation-fill-mode: forwards;
+      animation-delay: 0.5s;
+      animation-name: keyWordsIn;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
     }
   }
 
@@ -155,6 +163,28 @@ table {
     }
   }
 }
+
+@keyframes paragraphIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@-webkit-keyframes paragraphIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+@keyframes keyWordsIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@-webkit-keyframes keyWordsIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 
 
 

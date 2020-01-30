@@ -20,6 +20,10 @@
   .navItem{
     width: 20px;
     height: 20px;
+    @media(max-width: 600px){
+      width: 15px;
+      height: 15px;
+    }
     background-color: #272838;
     border: 2px solid #272838;
     border-radius: 20px;
@@ -40,8 +44,50 @@
   .itemLace{
     height: 200px;
     width: 1px;
-    border-left: 1px solid #272838;
+    border-left: 1px solid #27283857;
     position: relative;
     left: 8px;
+    transition: all 0.5s;
+    /*&-1{
+      webkit-animation-name: laceGrow; 
+      -webkit-animation-duration: 0.5s; 
+      -webkit-animation-fill-mode: forwards;
+      -webkit-animation-delay: 0.5s;
+      animation-name: laceGrow;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+      animation-delay: 0.5s;
+      animation-timing-function: ease-in-out;
+    }
+    &-2{
+      webkit-animation-name: laceGrow; 
+      -webkit-animation-duration: 0.5s; 
+      -webkit-animation-fill-mode: forwards;
+      -webkit-animation-delay: 0.5s;
+      animation-name: laceGrow;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+      animation-delay: 1s;
+      animation-timing-function: ease-in-out;
+    }*/
+    @media(max-width: 600px){
+      left: 6px;
+      height: 150px;
+    }
+    @media(max-height: 650px) and (orientation: landscape){
+      height: 100px;
+    }
   }
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes laceGrow {
+  from {height: 0px;}
+  to {height: 100px;}
+}
+
+/* Standard syntax */
+@keyframes laceGrow {
+  from {height: 0px;}
+  to {height: 100px;}
 }

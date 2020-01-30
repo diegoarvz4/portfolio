@@ -12,6 +12,9 @@ class Navigator extends React.Component {
       headerNavFeedback: '#D7263D',
       projectsNavFeedback: 'white',
       contactNavFeedback: 'white',
+      headerOpacity: 1,
+      projectsOpacity: 0.5,
+      contactOpacity: 0.5,
     }
     this.handleScroll = this.handleScroll.bind(this);
     this.scrollTo = this.scrollTo.bind(this);
@@ -27,6 +30,9 @@ class Navigator extends React.Component {
         headerNavFeedback: hightLight,
         projectsNavFeedback: unHighlight,
         contactNavFeedback: unHighlight,
+        headerOpacity: 1,
+        projectsOpacity: 0.5,
+        contactOpacity: 0.5,
       })
       document.getElementById('App').style.backgroundColor = '#FFF';
     } else if(window.scrollY >= this.state.projectsOffset - plusOffset && window.scrollY < this.state.contactOffset - plusOffset){
@@ -34,6 +40,9 @@ class Navigator extends React.Component {
         headerNavFeedback: unHighlight,
         projectsNavFeedback: hightLight,
         contactNavFeedback: unHighlight,
+        headerOpacity: 0.5,
+        projectsOpacity: 1,
+        contactOpacity: 0.5,
       })
       document.getElementById('App').style.backgroundColor = '#FAFF81';
     } else if (window.scrollY >= this.state.contactOffset - plusOffset) {
@@ -41,6 +50,9 @@ class Navigator extends React.Component {
         headerNavFeedback: unHighlight,
         projectsNavFeedback: unHighlight,
         contactNavFeedback: hightLight,
+        headerOpacity: 0.5,
+        projectsOpacity: 0.5,
+        contactOpacity: 1,
       }) 
       document.getElementById('App').style.backgroundColor = '#FFF';
     }
@@ -73,12 +85,9 @@ class Navigator extends React.Component {
   
 
   render() {
-
-
-
     return (
       <nav className="NavigatorContainer" >
-        <div className="navItemContainer" onClick={() => this.scrollTo('Header')}>
+        <div className="navItemContainer" onClick={() => this.scrollTo('Header')} style={{opacity: this.state.headerOpacity}}>
           <div className="navItem" 
             style={
               {
@@ -86,12 +95,12 @@ class Navigator extends React.Component {
               }
             }
           />
-          <div className="navItem-text">
+          <div className="navItem-text" >
             Hello!
           </div>
         </div>
-        <div className="itemLace"></div>
-        <div className="navItemContainer" onClick={() => this.scrollTo('Projects')}>
+        <div className="itemLace itemLace-1"></div>
+        <div className="navItemContainer" onClick={() => this.scrollTo('Projects')} style={{opacity: this.state.projectsOpacity}}>
           <div className="navItem" 
             style={
               {
@@ -103,8 +112,8 @@ class Navigator extends React.Component {
             Projects
           </div>
         </div>
-        <div className="itemLace"></div>
-        <div className="navItemContainer" onClick={() => this.scrollTo('Contact')}>
+        <div className="itemLace itemLace-2"></div>
+        <div className="navItemContainer" onClick={() => this.scrollTo('Contact')} style={{opacity: this.state.contactOpacity}}>
           <div className="navItem" 
             style={
               {
