@@ -114,17 +114,17 @@
     width: 50%;
     @media (max-width: 868px){
       width: 100%;
-      order: 3;
     }
     padding: 40px;
-    display: flex;
-    justify-content: center;
     @media (max-width: 640px){
       padding-right: 4px;
-      
     }
     @media (max-width: 320px){
       max-height: 300px;
+    }
+    img {
+      margin: 0 auto;
+      display: block;
     }
   }
   
