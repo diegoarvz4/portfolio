@@ -6,7 +6,8 @@
 
 ## Built With
 
-- React
+- React JS
+- SCSS
 - Icons from icon8.com
 
 ## Live Demo
@@ -30,6 +31,10 @@ To get a local copy up and running follow these simple example steps.
 
 ## Usage
   Run the following command on your terminal: `$ npm start`, this will run a local server which can be accesed via a web browser in `https://localhost:3000`
+  
+## Future Features
+- Carrousel
+- Blog
 
 # Authors
 
