@@ -19,9 +19,9 @@ https://diegoarvz.me.com
 To get a local copy up and running follow these simple example steps.
 
 ## Prerequisites
- -React
- -Npm
- -A web Browser. 
+ - React
+ - Npm
+ - A web Browser. 
 
 ## Setup
   Clone or download this Repository.
