@@ -30,7 +30,7 @@ function App() {
           }}
           skillsIcons={['html5','css3', 'sass','js', 'ruby', 'react']}
           name="MUSICLASS"
-          desc={"Musiclass is mobile web app for making appointments with music teachers. Find teachers by your favorite musical instrument. This project was built with React JS (frond-end), and Ruby on Rails (back-end)."}          
+          desc={"Musiclass is mobile web app for making appointments with music teachers. Search for teachers by musical instrument. This project was built with React JS (frond-end), and Ruby on Rails (back-end)."}          
           sourceCodeLink={"https://github.com/diegoarvz4/React-MusicTeachers"}
           liveDemoLink={"https://diegoarvz-musicteachers.herokuapp.com/"}
           walkthrough={"https://www.loom.com/share/a33dc112c87c4154a6572bda7a176263"}
@@ -39,7 +39,7 @@ function App() {
           skillsIcons={['html5','css3', 'sass', 'bootstrap','js', 'ruby']}
           name="LEXI SERIES"
           img={lexiSeriesMockup}
-          desc={"Lexi Series is a web platform for dubbing houses. Directors, translators and QC's that need to have all the information as promptly as possible. The front-end and back-end were built with Ruby on Rails. Bootstrap 3 components were used."}
+          desc={"Lexi Series is a web platform for dubbing houses. Directors, translators and QC's are able to access all dubbing-related information as promptly as possible. The front-end and back-end were built with Ruby on Rails. Bootstrap 3 components were used."}
           imgStyle={{
             width: '100%'
           }}
@@ -54,19 +54,19 @@ function App() {
             width: '100%'
           }}
           img={BattleshipMockup}
-          desc={"The classic boardgame Battleship into a practical web version. This project was built with pure vanilla javascript, ES6 and webpack."}
+          desc={"The classic board game Battleship turned into a practical web application. This project was built with pure vanilla JavaScript, ES6 and Webpack."}
           sourceCodeLink={"https://github.com/FSolM/JS-battleship"}
           liveDemoLink={"https://fsolm.github.io/JS-battleship/"}
           walkthrough={"https://www.loom.com/share/204db2454dc5405fb49d23e4bdcadd79"} 
         />
         <ProjectPreview 
-          skillsIcons={['html5', 'css3', 'sass', 'bootstrap','js', 'webpack']}
+          skillsIcons={['html5', 'css3', 'sass', 'bootstrap','js', 'ruby']}
           name="UFRIENDS"
           img={uFriends}
           imgStyle={{
             width: '100%'
           }}
-          desc={"A social media where you can post, like and comment your friend's posts. The back-end and the front-end were built with Ruby on Rails."} 
+          desc={"A social media site where you can post, like, and comment on your friends' posts. The back-end and the front-end were built with Ruby on Rails."} 
           sourceCodeLink={"https://github.com/diegoarvz4/building_facebook"}
           liveDemoLink={"https://intense-refuge-98385.herokuapp.com"}
           walkthrough={"https://www.loom.com/share/37a5e19c59874ef89740d5a5c840f1ce"}
@@ -78,7 +78,7 @@ function App() {
           imgStyle={{
             width: '60%'
           }}
-          desc={"This web app gives the weather information about almost any city in the world. The data is fetched from OpenWeatherMap.com. This project was built with vanilla javascript."}
+          desc={"This web app gives the weather forecast for almost any city in the world. The data is fetched from OpenWeatherMap.com. This project was built with vanilla JavaScript."}
           sourceCodeLink={"https://github.com/diegoarvz4/weather_app"}
           liveDemoLink={"https://diegoarvz4.github.io/weather_app/"}
           walkthrough={"https://www.loom.com/share/b47a976ac14b4e6aa700817ed9844eb6"}
@@ -90,7 +90,7 @@ function App() {
           imgStyle={{
             width: '50%'
           }}
-          desc={"A mobile app video game. Turbo Bluck is a mission space modern arcade experience. This project was built with Unity 5. I also made the music compositions!"}
+          desc={"A mobile app video game. Turbo Bluck is a space mission modern arcade experience. This project was built with Unity 5 and C#. I also made the music compositions!"}
           sourceCodeLink={"https://play.google.com/store/apps/details?id=com.offbox.turbobluck&hl=en_US"}
           liveDemoLink={"https://play.google.com/store/apps/details?id=com.offbox.turbobluck&hl=en_US"}
           walkthrough={"https://www.youtube.com/watch?v=MZcDtpvO-Zk&list=PLxQJrNtUKBihZcd10lmNedcmfDAwISRqz"}
